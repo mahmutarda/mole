@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Metin fontunu ayarla */
+    text-align: center; /* Metinleri ortala */
+    background: url("./mario-bg.jpg"); /* Arkaplan resmini ayarla */
+    background-size: cover; /* Arkaplan resmini ekran boyutuna uygun şekilde genişlet */
+}
+
+#board {
+    width: 540px; /* Oyun tahtasının genişliği */
+    height: 540px; /* Oyun tahtasının yüksekliği */
+
+    margin: 0 auto; /* Tahtayı ortala */
+    display: flex; /* Flexbox kullanarak içerik düzenleme */
+    flex-wrap: wrap; /* Daha küçük cihazlarda tahtanın sığmasını sağla */
+
+    background: url("./soil.png"); /* Tahtanın arkaplan resmini ayarla */
+    background-size: cover; /* Arkaplan resmini ekran boyutuna uygun şekilde genişlet */
+    border: 3px solid white; /* Tahtanın kenarlık rengini beyaz yap */
+    border-radius: 25px; /* Tahtanın kenarlarını yuvarla */
+}
+
+#board div {
+    width: 180px; /* Her karonun genişliği */
+    height: 180px; /* Her karonun yüksekliği */
+    background-image: url("./pipe.png"); /* Karoların arkaplan resmini ayarla */
+    background-size: cover; /* Arkaplan resmini ekran boyutuna uygun şekilde genişlet */
+}
+
+#board div img {
+    width: 100px; /* Resimlerin genişliği */
+    height: 100px; /* Resimlerin yüksekliği */
+    user-select: none; /* Kullanıcı seçimini devre dışı bırak */
+    -moz-user-select: none; /* Firefox için kullanıcı seçimini devre dışı bırak */
+    -webkit-user-drag: none; /* WebKit tabanlı tarayıcılarda sürükleme işlemini devre dışı bırak */
+    -webkit-user-select: none; /* WebKit tabanlı tarayıcılarda kullanıcı seçimini devre dışı bırak */
+    -ms-user-select: none; /* Microsoft Edge için kullanıcı seçimini devre dışı bırak */
+}
+
